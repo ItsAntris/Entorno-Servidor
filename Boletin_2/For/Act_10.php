@@ -10,7 +10,7 @@ function fibonacci($n) {
     return $fib;
 }
 
-$n = 10; // Número de elementos a generar
+$n = 20; // Número de elementos a generar
 $resultado = fibonacci($n);
 
-echo "Los primeros $n números de Fibonacci son: " . implode(", ", $resultado);
+echo implode(", ", $resultado);
