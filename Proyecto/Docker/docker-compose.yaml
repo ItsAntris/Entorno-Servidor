@@ -1,23 +1,7 @@
 version: '3.8'
 
 services:
-  wordpress:
-    image: wordpress:latest
-    container_name: wordpress
-    ports:
-      - "8000:80"
-    environment:
-      WORDPRESS_DB_HOST: mysql
-      WORDPRESS_DB_USER: Antris
-      WORDPRESS_DB_PASSWORD: 12345
-      WORDPRESS_DB_NAME: BBDD
-    volumes:
-      - ./html:/var/www/html
-    networks:
-      - wp_network
-    depends_on:
-      - mysql
-
+  # Servicio de MySQL
   mysql:
     image: mysql:5.7
     container_name: mysql
@@ -29,8 +13,9 @@ services:
     volumes:
       - db_data:/var/lib/mysql
     networks:
-      - wp_network
+      - app-network
 
+  # Servicio de phpMyAdmin
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     container_name: phpmyadmin
@@ -38,10 +23,31 @@ services:
       PMA_HOST: mysql
       MYSQL_ROOT_PASSWORD: 12345
     ports:
-      - "8080:80"
+      - '8080:80'
+    depends_on:
+      - mysql
     networks:
-      - wp_network
+      - app-network
 
+  # Servicio de WordPress
+  wordpress:
+    image: wordpress:latest
+    container_name: wordpress
+    environment:
+      WORDPRESS_DB_HOST: mysql
+      WORDPRESS_DB_USER: Antris
+      WORDPRESS_DB_PASSWORD: 12345
+      WORDPRESS_DB_NAME: BBDD
+    ports:
+      - '8000:80'
+    volumes:
+      - ./wordpress:/var/www/html
+    depends_on:
+      - mysql
+    networks:
+      - app-network
+
+  # Servicio de PHP + Apache
   php:
     image: php:7.4-apache
     container_name: php-apache
@@ -52,9 +58,9 @@ services:
     networks:
       - app-network
 
-networks:
-  app_network:
-    driver: bridge
-
 volumes:
   db_data:
+
+networks:
+  app-network:
+    driver: bridge
