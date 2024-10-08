@@ -52,16 +52,6 @@ services:
     networks:
       - app-network
 
-httpd:
-    image: httpd:latest
-    container_name: apache
-    ports:
-      - "8081:80"
-    volumes:
-      - ./httpd:/usr/local/apache2/htdocs/
-    networks:
-      - app-network
-
 networks:
   app_network:
     driver: bridge
