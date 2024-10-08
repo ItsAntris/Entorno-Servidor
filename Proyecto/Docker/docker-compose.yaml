@@ -5,7 +5,7 @@ services:
     image: wordpress:latest
     container_name: wordpress
     ports:
-      - "8080:80"
+      - "8000:80"
     environment:
       WORDPRESS_DB_HOST: mysql
       WORDPRESS_DB_USER: Antris
@@ -38,12 +38,32 @@ services:
       PMA_HOST: mysql
       MYSQL_ROOT_PASSWORD: 12345
     ports:
-      - "8081:80"
+      - "8080:80"
     networks:
       - wp_network
 
+  php:
+    image: php:7.4-apache
+    container_name: php-apache
+    ports:
+      - "8082:80"
+    volumes:
+      - ./php:/var/www/html
+    networks:
+      - app-network
+
+httpd:
+    image: httpd:latest
+    container_name: apache
+    ports:
+      - "8081:80"
+    volumes:
+      - ./httpd:/usr/local/apache2/htdocs/
+    networks:
+      - app-network
+
 networks:
-  wp_network:
+  app_network:
     driver: bridge
 
 volumes:
