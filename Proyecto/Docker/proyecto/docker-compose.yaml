@@ -19,7 +19,7 @@ services:
     depends_on:
       - db
     volumes:
-      - wp_data:/var/www/html
+      - ./wordpress:/var/www/html
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_USER: Antris
