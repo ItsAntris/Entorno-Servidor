@@ -1,0 +1,630 @@
+# Translation of Themes - Stylish Fashion Shop in Spanish (Spain)
+# This file is distributed under the same license as the Themes - Stylish Fashion Shop package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2024-06-26 10:48:00+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: es\n"
+"Project-Id-Version: Themes - Stylish Fashion Shop\n"
+
+#: inc/customizer.php:785
+msgid "Footer Background Image"
+msgstr "Imagen de fondo de pie de página"
+
+#: inc/customizer.php:579
+msgid "500px"
+msgstr "500px"
+
+#: inc/customizer.php:577
+msgid "Add the slider height in px(eg. 500px)."
+msgstr "Añade la altura del carrusel en px(ej. 500px)."
+
+#: inc/customizer.php:576
+msgid "Slider Height"
+msgstr "Altura del carrusel"
+
+#: inc/customizer.php:695
+msgid "Check this box to enable thumbnail on post page."
+msgstr "Marca esta casilla para activar la miniatura en la página de entradas."
+
+#: inc/customizer.php:693
+msgid "Enable Post Page Thumbnail"
+msgstr "Activar la miniatura de la página de entradas"
+
+#: inc/customizer.php:684
+msgid "Check this box to enable meta on post page."
+msgstr "Marca esta casilla para activar meta en la página de la entradas."
+
+#: inc/customizer.php:682
+msgid "Enable Post Page Meta"
+msgstr "Activar meta de las entradas"
+
+#: inc/customizer.php:673
+msgid "Check this box to enable title on post page."
+msgstr "Marca esta casilla para activar el título en la página de entradas."
+
+#: inc/customizer.php:671
+msgid "Enable Post Page Title"
+msgstr "Activar el título de la página de entradas"
+
+#: inc/customizer.php:661
+msgid "Post Settings"
+msgstr "Ajustes de entradas"
+
+#: inc/customizer.php:842
+msgid "Show / Hide Copyright"
+msgstr "Mostrar / ocultar copyright"
+
+#: inc/customizer.php:218 inc/customizer.php:815 inc/customizer.php:831
+#: inc/customizer.php:875
+msgid "Center"
+msgstr "Centrar"
+
+#: inc/customizer.php:217 inc/customizer.php:814 inc/customizer.php:830
+#: inc/customizer.php:874
+msgid "Left"
+msgstr "Izquierda"
+
+#: inc/customizer.php:216 inc/customizer.php:816 inc/customizer.php:832
+#: inc/customizer.php:876
+msgid "Right"
+msgstr "Derecha"
+
+#: inc/customizer.php:230
+msgid "Product per row"
+msgstr "Productos por fila"
+
+#: inc/customizer.php:202
+msgid "Show Theme Scroll To Top"
+msgstr "Mostrar el «Volver arriba» del tema"
+
+#. translators: 1: Theme author.
+#: footer.php:88
+msgid "by %1$s."
+msgstr "de %1$s."
+
+#. translators: 1: Theme name,
+#: footer.php:83
+msgid " %1$s "
+msgstr " %1$s "
+
+#: functions.php:579
+msgid "View Demo"
+msgstr "Ver demo"
+
+#: functions.php:576
+msgid "Documentation"
+msgstr "Documentación"
+
+#: functions.php:575
+msgid "Get started"
+msgstr "Primeros pasos"
+
+#: functions.php:574
+msgid "Get Started With Theme By Clicking On Getting Started."
+msgstr "Comienza con el tema haciendo clic en «Primeros pasos»."
+
+#: functions.php:573
+msgid "Thank You For Choosing "
+msgstr "Gracias por elegir "
+
+#: inc/customizer.php:93
+msgid "Logo Width"
+msgstr "Ancho del logo"
+
+#: inc/customizer.php:114
+msgid "Enable Disable Tagline"
+msgstr "Activar / desactivar descripción corta"
+
+#: inc/customizer.php:103
+msgid "Enable Disable Title"
+msgstr "Activar / desactivar título"
+
+#: functions.php:365
+msgid "Theme Options"
+msgstr "Opciones del tema"
+
+#: functions.php:557
+msgid "Go Premium"
+msgstr "Hazte premium"
+
+#: functions.php:549
+msgid "Importable Demo Content\t"
+msgstr "Contenido de ejemplo importable\t"
+
+#: functions.php:544
+msgid "Customize Background Color"
+msgstr "Personalizar el color de fondo"
+
+#: functions.php:539
+msgid "Customize Sidebar Color"
+msgstr "Personalizar el color de la barra lateral"
+
+#: functions.php:534
+msgid "Customize Footer Color"
+msgstr "Personalizar el color del pie de página"
+
+#: functions.php:529
+msgid "Customize Blog Feed Color"
+msgstr "Personalizar el color del feed del blog"
+
+#: functions.php:524
+msgid "Customize Post/Page Color"
+msgstr "Personalizar el color de las entradas y páginas"
+
+#: functions.php:519
+msgid "Customize Navigation Color"
+msgstr "Personalizar el color de la navegación"
+
+#: functions.php:514
+msgid "Customize Upper Widgets Colors"
+msgstr "Personalizar los colores de los widgets superiores"
+
+#: functions.php:509
+msgid "Replace Copyright Text"
+msgstr "Reemplazar el texto de copyright"
+
+#: functions.php:504
+msgid "Only Show Upper Widgets On Front Page"
+msgstr "Mostrar los widgets superiores solo en la página de inicio"
+
+#: functions.php:499
+msgid "Full Width (Hide Sidebar)"
+msgstr "Ancho completo (ocultar la barra lateral)"
+
+#: functions.php:494
+msgid "Custom Text On Header Image"
+msgstr "Texto personalizado en la imagen de la cabecera"
+
+#: functions.php:489
+msgid "Show Header Everywhere"
+msgstr "Mostrar la cabecera en todas partes"
+
+#: functions.php:484
+msgid "Only Show Header Image On Front Page"
+msgstr "Mostrar la imagen de cabecera solo en la página de inicio"
+
+#: functions.php:479
+msgid "Pagespeed Plugin"
+msgstr "Plugin Pagespeed"
+
+#: functions.php:474
+msgid "Easy Google Fonts"
+msgstr "Easy Google Fonts"
+
+#: functions.php:468
+msgid "Recent Posts Widget"
+msgstr "Widget de entradas recientes"
+
+#: functions.php:463
+msgid "Fully SEO Optimized"
+msgstr "Completamente optimizado para SEO"
+
+#: functions.php:458
+msgid "Premium Support"
+msgstr "Soporte premium"
+
+#: functions.php:452
+msgid "Hide Logo Text"
+msgstr "Ocultar el texto del logotipo"
+
+#: functions.php:447
+msgid "Custom Navigation Logo Or Text"
+msgstr "Logotipo o texto de navegación personalizado"
+
+#: functions.php:442
+msgid "Header Background Color"
+msgstr "Color de fondo de la cabecera"
+
+#: functions.php:436
+msgid "Premium Version"
+msgstr "Versión Premium"
+
+#: functions.php:435
+msgid "Basic Version"
+msgstr "Versión básica"
+
+#: functions.php:434
+msgid "Theme Feature"
+msgstr "Características del tema"
+
+#: functions.php:426
+msgid "View Theme Demo"
+msgstr "Ver demo del tema"
+
+#: functions.php:423
+msgid "Checkout Documentation"
+msgstr "Comprobar la documentación"
+
+#: functions.php:420
+msgid "Free Vs Premium"
+msgstr "Gratis vs Premium"
+
+#: functions.php:398 functions.php:401
+msgid "Review"
+msgstr "Reseña"
+
+#: functions.php:392
+msgid "Get Premium"
+msgstr "Hazte Premium"
+
+#: functions.php:390
+msgid "Our premium theme comes with extended features like demo content import , responsive layouts etc."
+msgstr "Nuestro tema premium viene con características extendidas como la importación de contenido de demostración, diseños adaptables, etc."
+
+#: functions.php:389
+msgid "Checkout Premium"
+msgstr "Comprobar premium"
+
+#: functions.php:380 functions.php:383
+msgid "Contact Support"
+msgstr "Contactar con soporte"
+
+#: functions.php:375
+msgid "Welcome To "
+msgstr "Bienvenido a "
+
+#: inc/customizer.php:192
+msgid "Preloader Second Dot Color"
+msgstr "Color del segundo punto del precargador"
+
+#: inc/customizer.php:182
+msgid "Preloader First Dot Color"
+msgstr "Color del primer punto del precargador"
+
+#: inc/customizer.php:172
+msgid "Preloader Background Color"
+msgstr "Color de fondo del precargador"
+
+#: inc/customizer.php:161
+msgid "Show Theme Preloader"
+msgstr "Mostrar el precargador del tema"
+
+#: inc/customizer.php:152
+msgid "General Settings"
+msgstr "Ajustes generales"
+
+#: functions.php:114
+msgid "Footer Column 3"
+msgstr "Columna 3 del pie de página"
+
+#: functions.php:104
+msgid "Footer Column 2"
+msgstr "Columna 2 del pie de página"
+
+#: functions.php:94
+msgid "Footer Column 1"
+msgstr "Columna 1 del pie de página"
+
+#: functions.php:365
+msgid " Theme Options"
+msgstr " Opciones del tema"
+
+#: functions.php:345
+msgid "https://wordpress.org/support/theme/stylish-fashion-shop/reviews/"
+msgstr "https://wordpress.org/support/theme/stylish-fashion-shop/reviews/"
+
+#: functions.php:342
+msgid "https://wordpress.org/support/theme/stylish-fashion-shop"
+msgstr "https://wordpress.org/support/theme/stylish-fashion-shop"
+
+#: functions.php:348
+msgid "https://demo.themagnifico.net/stylish-fashion-shop/"
+msgstr "https://demo.themagnifico.net/stylish-fashion-shop/"
+
+#: functions.php:354
+msgid "https://demo.themagnifico.net/eard/wathiqa/stylish-fashion-shop-pro-doc/"
+msgstr "https://demo.themagnifico.net/eard/wathiqa/stylish-fashion-shop-pro-doc/"
+
+#: functions.php:351
+msgid "https://www.themagnifico.net/products/stylish-wordpress-theme"
+msgstr "https://www.themagnifico.net/products/stylish-wordpress-theme"
+
+#. Template Name of the theme
+msgid "Home Template"
+msgstr "Plantilla de la página de inicio"
+
+#: functions.php:86
+msgid "Add widgets here."
+msgstr "Añade widgets aquí."
+
+#: functions.php:84
+msgid "Sidebar"
+msgstr "Barra lateral"
+
+#: inc/customizer.php:642
+msgid "Select Product Category"
+msgstr "Selecciona una categoría de producto"
+
+#: footer.php:100
+msgid "TOP"
+msgstr "ARRIBA"
+
+#. translators: %s: CMS name, i.e. WordPress.
+#: footer.php:75
+msgid "Proudly powered by %s"
+msgstr "Funciona gracias a %s"
+
+#. Template Name of the theme
+#: inc/customizer.php:272 inc/customizer.php:298
+msgid "Right Sidebar"
+msgstr "Barra lateral derecha"
+
+#. Template Name of the theme
+#: inc/customizer.php:271 inc/customizer.php:297
+msgid "Left Sidebar"
+msgstr "Barra lateral izquierda"
+
+#: inc/customizer.php:451
+msgid "Select font awesome icons <a target=\"_blank\" href=\"https://fontawesome.com/v5/search?m=free\">Click Here</a> for select icon. for eg:-fab fa-pinterest-p"
+msgstr "Selecciona un icono de Font Awesome <a target=\"_blank\" href=\"https://fontawesome.com/v5/search?m=free\">Haz clic aquí</a> para seleccionar el icono. Por ejemplo:-fab fa-pinterest-p"
+
+#: inc/customizer.php:428
+msgid "Select font awesome icons <a target=\"_blank\" href=\"https://fontawesome.com/v5/search?m=free\">Click Here</a> for select icon. for eg:-fab fa-linkedin-in"
+msgstr "Selecciona un icono de Font Awesome <a target=\"_blank\" href=\"https://fontawesome.com/v5/search?m=free\">Haz clic aquí</a> para seleccionar el icono. Por ejemplo:-fab fa-linkedin-in"
+
+#: inc/customizer.php:404
+msgid "Select font awesome icons <a target=\"_blank\" href=\"https://fontawesome.com/v5/search?m=free\">Click Here</a> for select icon. for eg:-fab fa-instagram"
+msgstr "Selecciona un icono de Font Awesome <a target=\"_blank\" href=\"https://fontawesome.com/v5/search?m=free\">Haz clic aquí</a> para seleccionar el icono. Por ejemplo:-fab fa-instagram"
+
+#: inc/customizer.php:380
+msgid "Select font awesome icons <a target=\"_blank\" href=\"https://fontawesome.com/v5/search?m=free\">Click Here</a> for select icon. for eg:-fab fa-twitter"
+msgstr "Selecciona un icono de Font Awesome <a target=\"_blank\" href=\"https://fontawesome.com/v5/search?m=free\">Haz clic aquí</a> para seleccionar el icono. Por ejemplo:-fab fa-twitter"
+
+#: inc/customizer.php:357
+msgid "Select font awesome icons <a target=\"_blank\" href=\"https://fontawesome.com/v5/search?m=free\">Click Here</a> for select icon. for eg:-fab fa-facebook-f"
+msgstr "Selecciona un icono de Font Awesome <a target=\"_blank\" href=\"https://fontawesome.com/v5/search?m=free\">Haz clic aquí</a> para seleccionar el icono. Por ejemplo:-fab fa-facebook-f"
+
+#: inc/customizer.php:30
+msgid "GET PREMIUM"
+msgstr "OBTENER PREMIUM"
+
+#: comments.php:80
+msgid "Comments are closed."
+msgstr "Los comentarios están cerrados."
+
+#: comments.php:56 comments.php:70
+msgid "Newer Comments"
+msgstr "Comentarios más recientes"
+
+#: comments.php:55 comments.php:69
+msgid "Older Comments"
+msgstr "Comentarios anteriores"
+
+#: comments.php:53 comments.php:67
+msgid "Comment navigation"
+msgstr "Navegación de comentarios"
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:37
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s comentario sobre «%2$s»"
+msgstr[1] "%1$s comentarios sobre «%2$s»"
+
+#. translators: %s: post title
+#: comments.php:32
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr "Un comentario sobre «%s»"
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content-page.php:36
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr "Editar <span class=\"screen-reader-text\">%s</span>"
+
+#: template-parts/content-none.php:44
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Parece que no encontramos lo que estás buscando. Puede que una búsqueda te ayude."
+
+#: template-parts/content-none.php:37
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Lo sentimos, pero nada coincide con tus términos de búsqueda. Por favor, prueba de nuevo con algunas palabras diferentes."
+
+#. translators: 1: link to WP admin new post page.
+#: template-parts/content-none.php:24
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "¿Preparado para publicar tu primera entrada? <a href=\"%1$s\">Empieza aquí</a>."
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "No se ha encontrado nada"
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content-single.php:30
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "Seguir leyendo<span class=\"screen-reader-text\"> \"%s\"</span>"
+
+#: template-parts/content-page.php:23 template-parts/content-single.php:41
+msgid "Pages:"
+msgstr "Páginas:"
+
+#: template-parts/navigation/nav.php:14
+msgid "Top Menu"
+msgstr "Menú superior"
+
+#: inc/template-tags.php:167
+msgid "Your comment is awaiting moderation."
+msgstr "Tu comentario está pendiente de moderación."
+
+#: inc/template-tags.php:142 inc/template-tags.php:162
+msgid "Edit"
+msgstr "Editar"
+
+#: inc/template-tags.php:141
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#. translators: %s: post title
+#: inc/template-tags.php:42
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr "Deja un comentario<span class=\"screen-reader-text\"> en %s</span>"
+
+#. translators: %s: post date
+#. translators: %s: post author
+#: inc/template-tags.php:27 inc/template-tags.php:33
+msgid "<span class=\"screen-reader-text\">Posted on</span> %s"
+msgstr "<span class=\"screen-reader-text\">Publicado </span> %s"
+
+#: inc/customizer.php:859
+msgid "Replace the footer text"
+msgstr "Reemplazar el texto del pie de página"
+
+#: inc/customizer.php:777
+msgid "Footer"
+msgstr "Pie de página"
+
+#: inc/customizer.php:563
+msgid "Select Slide Page"
+msgstr "Seleccionar página de diapositiva"
+
+#: inc/customizer.php:529
+msgid "Slider Settings"
+msgstr "Ajustes del carrusel"
+
+#: inc/customizer.php:459
+msgid "Pinterest Link"
+msgstr "Enlace a Pinterest"
+
+#: inc/customizer.php:436
+msgid "Linkedin Link"
+msgstr "Enlace a Linkedin"
+
+#: inc/customizer.php:412
+msgid "Intagram Link"
+msgstr "Enlace de Instagram"
+
+#: inc/customizer.php:388
+msgid "Twitter Link"
+msgstr "Enlace a Twitter"
+
+#: inc/customizer.php:365
+msgid "Facebook Link"
+msgstr "Enlace a Facebook"
+
+#: inc/customizer.php:333
+msgid "Social Links"
+msgstr "Enlaces sociales"
+
+#: inc/customizer.php:487
+msgid "Phone Number"
+msgstr "Número de teléfono"
+
+#: woocommerce/checkout/form-checkout.php:51
+msgid "Your order"
+msgstr "Tu pedido"
+
+#: woocommerce/checkout/form-checkout.php:26
+msgid "You must be logged in to checkout."
+msgstr "Debes estar conectado para para poder finalizar la compra."
+
+#: searchform.php:14
+msgctxt "submit button"
+msgid "Search"
+msgstr "Buscar"
+
+#: searchform.php:12
+msgctxt "label"
+msgid "Search for:"
+msgstr "Buscar:"
+
+#: searchform.php:12
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr "Buscar &hellip;"
+
+#: 404.php:19
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr "Parece que aquí no hay nada. ¿por qué no pruebas uno de estos enlaces o la búsqueda?"
+
+#: 404.php:16
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "¡Vaya! No se puede encontrar esa página."
+
+#. translators: %s: search query.
+#: search.php:21
+msgid "Search Results for: %s"
+msgstr "Resultados de la búsqueda: %s"
+
+#: functions.php:41
+msgid "Footer Menu"
+msgstr "Menú del pie de página"
+
+#: functions.php:40
+msgid "Primary"
+msgstr "Principal"
+
+#: header.php:33
+msgid "Skip to content"
+msgstr "Saltar al contenido"
+
+#: inc/customizer.php:341
+msgid "Show Social Icon"
+msgstr "Mostrar icono social"
+
+#: inc/customizer.php:446
+msgid "Add Pinterest Icon"
+msgstr "Añadir icono de Pinterest"
+
+#: inc/customizer.php:423
+msgid "Add Linkedin Icon"
+msgstr "Añadir icono de Linkedin"
+
+#: inc/customizer.php:399
+msgid "Add Intagram Icon"
+msgstr "Añadir icono de Instagram"
+
+#: inc/customizer.php:375
+msgid "Add Twitter Icon"
+msgstr "Añadir icono de Twitter"
+
+#: inc/customizer.php:352
+msgid "Add Facebook Icon"
+msgstr "Añadir icono de Facebook"
+
+#: inc/customizer.php:530
+msgid "Here you have to add 3 different pages in below dropdown. Note: Image Dimensions 1400 x 550 px"
+msgstr "Aquí tienes que añadir 3 páginas diferentes en el desplegable de abajo. Nota: Dimensiones de la imagen 1400 x 550 px"
+
+#: template-parts/topheader/mainheader.php:48
+msgid "shopping cart"
+msgstr "carrito de la compra"
+
+#: template-parts/content-audio.php:53 template-parts/content-gallery.php:41
+#: template-parts/content-image.php:36 template-parts/content-search.php:21
+#: template-parts/content-video.php:52 template-parts/content.php:38
+msgid "Read More"
+msgstr "Leer más"
+
+#: template-parts/content-audio.php:42 template-parts/content-gallery.php:30
+#: template-parts/content-image.php:25 template-parts/content-search.php:15
+#: template-parts/content-single.php:21 template-parts/content-video.php:41
+#: template-parts/content.php:27
+msgid "BY"
+msgstr "Por"
+
+#: inc/customizer.php:498
+msgid "Email"
+msgstr "Correo electrónico"
+
+#. Author URI of the theme
+#: style.css
+#, gp-priority: low
+msgid "https://www.themagnifico.net/"
+msgstr "https://www.themagnifico.net/"
+
+#. Author of the theme
+#: style.css
+#, gp-priority: low
+msgid "TheMagnifico52"
+msgstr "TheMagnifico52"
+
+#. Theme URI of the theme
+#: style.css
+#, gp-priority: low
+msgid "https://www.themagnifico.net/products/free-fashion-stylish-wordpress-theme"
+msgstr "https://www.themagnifico.net/products/free-fashion-stylish-wordpress-theme"
