@@ -32,7 +32,7 @@ echo "Coste completo de envío.";
 ?>
 
 <?php
-$productos = array("Camiseta", "Pantalón", "Gorra");
+$productos = array("Zapatilla", "Sombrero", "Gorra");
 foreach ($productos as $producto) {
     echo $producto . '<br>';
 }
