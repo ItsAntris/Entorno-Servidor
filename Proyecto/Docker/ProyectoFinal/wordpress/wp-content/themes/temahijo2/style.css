@@ -1,0 +1,22 @@
+/*
+Theme Name:   Twenty Twenty-Four Child
+Theme URI:    http://example.com/twenty-twenty-four-child/
+Description:  Tema hijo de Twenty Twenty-Four
+Author:       Tu nombre
+Author URI:   http://example.com
+Template:     twentytwentyfour
+Version:      1.0.0
+Text Domain:  twentytwentyfour-child
+*/
+
+/* Aquí puedes agregar tus estilos personalizados */
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    }
+    .producto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    }
