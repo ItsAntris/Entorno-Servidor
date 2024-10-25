@@ -25,6 +25,7 @@ services:
       WORDPRESS_DB_USER: Antris
       WORDPRESS_DB_PASSWORD: 12345
       WORDPRESS_DB_NAME: tienda
+      WORDPRESS_DEBUG: 1
     networks:
       - net_tienda
     ports:

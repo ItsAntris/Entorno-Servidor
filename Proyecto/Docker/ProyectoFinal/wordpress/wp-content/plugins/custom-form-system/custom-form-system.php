@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Sistema Avanzado de Formularios
  * Description: Sistema personalizado de formularios con validación
- * Version: 1.0
+ * Version: 1.1
  * Author: Tu Nombre
  */
 
@@ -34,7 +34,6 @@ class CustomFormHandler {
         add_action('wp_ajax_nopriv_process_custom_form', array($this, 'process_form'));
     }
 
-    // 2. Función para validar datos
     public function validate_form_data($data) {
         $errors = array();
         
@@ -56,10 +55,25 @@ class CustomFormHandler {
         return $errors;
     }
 
-    // 3. Función para procesar el formulario
     public function process_form() {
-        check_ajax_referer('custom_form_nonce', 'nonce');
+        // Verificar que la petición es POST
+        if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+            wp_send_json_error('Método no permitido');
+            return;
+        }
+
+        // Verificar nonce
+        if (!check_ajax_referer('custom_form_nonce', 'nonce', false)) {
+            wp_send_json_error('Error de seguridad');
+            return;
+        }
         
+        // Verificar que los campos existen
+        if (!isset($_POST['nombre']) || !isset($_POST['email']) || !isset($_POST['mensaje'])) {
+            wp_send_json_error('Faltan campos requeridos');
+            return;
+        }
+
         $data = array(
             'nombre' => sanitize_text_field($_POST['nombre']),
             'email' => sanitize_email($_POST['email']),
@@ -69,28 +83,34 @@ class CustomFormHandler {
         $errors = $this->validate_form_data($data);
         
         if (empty($errors)) {
-            // Guardar en la base de datos
-            global $wpdb;
-            $table_name = $wpdb->prefix . 'custom_form_submissions';
-            
-            $wpdb->insert(
-                $table_name,
-                array(
-                    'nombre' => $data['nombre'],
-                    'email' => $data['email'],
-                    'mensaje' => $data['mensaje'],
-                    'fecha' => current_time('mysql')
-                ),
-                array('%s', '%s', '%s', '%s')
-            );
-            
-            wp_send_json_success('Formulario enviado correctamente');
+            try {
+                global $wpdb;
+                $table_name = $wpdb->prefix . 'custom_form_submissions';
+                
+                $result = $wpdb->insert(
+                    $table_name,
+                    array(
+                        'nombre' => $data['nombre'],
+                        'email' => $data['email'],
+                        'mensaje' => $data['mensaje'],
+                        'fecha' => current_time('mysql')
+                    ),
+                    array('%s', '%s', '%s', '%s')
+                );
+
+                if ($result === false) {
+                    throw new Exception($wpdb->last_error);
+                }
+                
+                wp_send_json_success('Formulario enviado correctamente');
+            } catch (Exception $e) {
+                wp_send_json_error('Error al guardar: ' . $e->getMessage());
+            }
         } else {
             wp_send_json_error($errors);
         }
     }
 
-    // 4. Función para renderizar el formulario
     public function render_form() {
         ob_start();
         ?>
@@ -121,7 +141,6 @@ class CustomFormHandler {
         return ob_get_clean();
     }
 
-    // 5. Función para encolar scripts y estilos
     public function enqueue_scripts() {
         wp_enqueue_style(
             'custom-form-styles',
@@ -148,9 +167,11 @@ class CustomFormHandler {
 }
 
 // Inicializar el plugin
-CustomFormHandler::get_instance();
+add_action('plugins_loaded', function() {
+    CustomFormHandler::get_instance();
+});
 
-// 6. Función para crear la tabla en la base de datos
+// Función para crear la tabla en la base de datos
 function create_custom_form_table() {
     global $wpdb;
     $table_name = $wpdb->prefix . 'custom_form_submissions';

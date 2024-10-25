@@ -5,21 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php bloginfo('name'); ?></title>
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
-    <?php wp_head(); ?> <!-- Importante: añadir wp_head() para los scripts -->
+    <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
     <header>
         <nav>
-            <a href="#" class="logo">E-Commerce</a>
+            <!-- Usar home_url() para el logo -->
+            <a href="<?php echo home_url('/'); ?>" class="logo">E-Commerce</a>
             <div class="nav-links">
-                <a href="#" class="active">Inicio</a>
-                <a href="#">Productos</a>
-                <a href="../wordpress/wp-content/themes/TemaHito3/paginas/formulario.php">Contacto</a>
+                <!-- Usar home_url() para enlaces internos en WordPress -->
+                <a href="<?php echo home_url('/'); ?>">Inicio</a>
+                <a href="<?php echo home_url('/Productos/'); ?>">Productos</a>
+                <a href="<?php echo home_url('/Contacto/'); ?>">Contacto</a>
             </div>
         </nav>
     </header>
-
-    <h1><?php echo 'Hola Mundo'; ?></h1>
-
+    <h1>Inicio</h1>
 </body>
-</html>
